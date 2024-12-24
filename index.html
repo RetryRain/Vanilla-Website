@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
@@ -37,7 +41,7 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="grid grid--1x2 container">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content wow animate__bounceInDown">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your website in less than 60 seconds
@@ -53,11 +57,15 @@
             type="image/png"
             srcset="images/banner.png 1x, images/banner@2x.png 2x"
           />
-          <img class="hero__image" src="./images/banner.png" alt="" />
+          <img
+            class="hero__image wow animate__bounceInRight"
+            src="./images/banner.png"
+            alt=""
+          />
         </picture>
       </div>
     </section>
-    <section class="block container block-domain">
+    <section class="block container block-domain wow animate__fadeInUpBig">
       <header class="block__header">
         <h2>Starting at 9$ per month</h2>
         <p>
@@ -87,7 +95,10 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block container block-plan">
+    <section
+      class="block container block-plan wow animate__zoomInDown"
+      data-wow-duration="1s"
+    >
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -160,7 +171,10 @@
         </p>
       </header>
       <div class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div
+          class="feature__content wow animate__fadeInUpBig"
+          data-wow-offset="0"
+        >
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -181,11 +195,18 @@
           <source
             type="image/jpg"
             srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
-          <img class="feature__image" src="./images/easy@2x.jpg" alt=""
+          <img
+            class="feature__image wow animate__fadeInRightBig"
+            data-wow-offset="0"
+            src="./images/easy@2x.jpg"
+            alt=""
         /></picture>
       </div>
       <div class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div
+          class="feature__content wow animate__fadeInUpBig"
+          data-wow-offset="0"
+        >
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -206,11 +227,18 @@
           <source
             type="image/jpg"
             srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x" />
-          <img class="feature__image" src="./images/fast@2x.jpg" alt=""
+          <img
+            class="feature__image wow animate__fadeInLeftBig"
+            data-wow-offset="0"
+            src="./images/fast@2x.jpg"
+            alt=""
         /></picture>
       </div>
       <div class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div
+          class="feature__content wow animate__fadeInUpBig"
+          data-wow-offset="0"
+        >
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -231,11 +259,18 @@
           <source
             type="image/jpg"
             srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x" />
-          <img class="feature__image" src="./images/wordpress@2x.jpg" alt=""
+          <img
+            class="feature__image wow animate__fadeInRightBig"
+            data-wow-offset="0"
+            src="./images/wordpress@2x.jpg"
+            alt=""
         /></picture>
       </div>
       <div class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div
+          class="feature__content wow animate__fadeInUpBig"
+          data-wow-offset="0"
+        >
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -256,12 +291,16 @@
           <source
             type="image/jpg"
             srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
-          <img class="feature__image" src="./images/support@2x.jpg" alt=""
+          <img
+            class="feature__image wow animate__fadeInLeftBig"
+            data-wow-offset="0"
+            src="./images/support@2x.jpg"
+            alt=""
         /></picture>
       </div>
     </article>
 
-    <section class="media-section">
+    <section class="media-section wow animate__fadeIn">
       <div class="block block--dark block--skewed-right media__block">
         <header class="block__header">
           <h2 class="block__heading">User-friendly Control Panel</h2>
@@ -343,7 +382,7 @@
         </div>
       </div>
     </section>
-    <div class="container testimonial-section">
+    <div class="container testimonial-section wow animate__zoomIn">
       <header class="block__header">
         <h2>What our customers are saying</h2>
         <p>
@@ -385,7 +424,7 @@
         </div>
       </div>
     </div>
-    <section class="callout-section">
+    <section class="callout-section wow animate__lightSpeedInRight">
       <div class="container callout">
         <div class="grid grid--1x2">
           <div class="callout__header">
@@ -473,5 +512,9 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW({ animateClass: "animate__animated", offset: 250 }).init();
+    </script>
   </body>
 </html>
